@@ -15,6 +15,14 @@ app.get("/javascript", (req, res) => {
   res.sendFile(__dirname + "/public/javascript.html");
 });
 
+app.get("/nodejs", (req, res) => {
+  res.sendFile(__dirname + "/public/nodejs.html");
+});
+
+app.get("/security", (req, res) => {
+  res.sendFile(__dirname + "/public/security.html");
+});
+
 // tech namespace
 const tech = io.of("/tech");
 
